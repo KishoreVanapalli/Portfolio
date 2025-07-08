@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="show-outer" onclick="changeBack()">
+    <div id="show" onclick="changeBack()">
+        <img id="show-image">
+        <a id="btn-url"><button class="btn-url">Check with URl</button></a>
+    </div>
+    </div>
+    <a href="#home">
+    <button id="back-to-home" ><i class="fa-solid fa-angle-up"></i></button><a href="#home"></a>
+    <div class="nav">
+        <div id="logo">
+            <span>K</span>ishore<span>.</span>
+        </div>
+        <div id="menu"><i onclick="menuCancel()" id="fa-bars" class="fa-solid fa-bars"></i></div>
+            <div id="nav-ul">
+                <ul class="nav-contents">
+                    <li class="content"><a href="#home">Home</a></li>
+                    <li class="content"><a href="#about">About</a></li>
+                    <li class="content"><a href="#skills-certificates">Skills</a></li>
+                    <li class="content"><a href="#portfolio">Portfolio</a></li>
+                    <li class="content"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="home" onclick="resetMenu()">
+        <h1 class="title">Hi There,<br> I'm <span>Kishore</span> Vanapalli</h1>
+        <h3 class="title" id="h3-title">Eager to Learn, Ready to Build.</h3>
+        <div id="icons-title">
+            <a href="https://www.instagram.com/vanapallikishor?utm_source=qr&igsh=cXV5dTQ3MTZtbHYy" target="_blank"><i class="fa-brands fa-instagram" id="title-icon"></i></a>
+                <a href="https://www.facebook.com/vanapalli.kishor.3" target="_blank"><i class="fa-brands fa-facebook" id="title-icon"></i></a>
+                <a href="https://wa.me/qr/5UUFT3CIKK5IM1" target="_blank"><i class="fa-brands fa-whatsapp" id="title-icon"></i></a>
+                <a href="https://github.com/KishoreVanapalli" target="_blank"><i class="fa-brands fa-github" id="title-icon"></i></a>
+                <a href="https://www.linkedin.com/in/kishorevanapalli5258?trk=contact-info" target="_blank"><i class="fa-brands fa-linkedin" id="title-icon"></i></a>
+        </div>
+    </div>
+    <div id="about" onclick="resetMenu()">
+        <div class="class-one">
+            <img src="imageFiles/photo.jpg" >
+        </div>
+        <div class="class-two">
+            <h1>About</h1>
+            <p id="about-content">I’m an ECE student at Pragati Engineering College with<br class="sub-break"> a strong interest in technology,
+                 problem-solving, and<br class="sub-break"> innovation. <br>I enjoy working on electronics and coding projects that <br class="sub-break">help me apply
+                  what I learn in real life.<br><span id="minor-content"><br> I have practical experience with programming languages like C, Python, HTML, CSS, 
+                  and JavaScript. I’m always eager to improve my skills and explore new areas in tech. <br><br> I’m currently looking for 
+                  opportunities where I can contribute, learn, and grow as a tech enthusiast.</p></span> 
+
+            <div>
+                <p class="active-line active" onclick="openContent('education')">Education</p>
+                <p class="active-line" onclick="openContent('experiance')">Experiance</p>
+            </div>
+            <ul class="list list-active" id="education">
+                <li>Pragati Engineering College, Surampalem 
+                    <br><span>B.Tech in ECE</span></li>
+                <li>VSM College Of Engineering, Ramchandrapuram 
+                    <br><span>State Board Of Technical Education and Training</span></li>
+                <li>S.K.P.G.N High School, Ramachadrapuram 
+                    <br><span>Andhra Pradesh Board of Secondary Education</span></li>
+            </ul>
+            <ul class="list" id="experiance">
+                <li>Portfolio Website Project  
+                    <br><span>Designed and built a responsive site using HTML, CSS, and JavaScript. Deployed on Netlify.</span>
+                </li>
+                <li>Responsive Web Design Certification Projects – FreeCodeCamp  
+                    <br><span>Completed 5 real-world responsive web pages using HTML, CSS, Flexbox, and Grid.</span>
+                </li>
+                <li>Python Projects – Cisco Networking Academy  
+                    <br><span>Developed Python programs using OOP, file handling, and modular design as part of Cisco Python Essentials 1 & 2.</span>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+    <div id="skills-certificates" onclick="resetMenu()">
+        <h1 id="skill-heading">Skills</h1>
+        <ul id="skill">
+        </ul>
+        <button class="btn" id="btn1" onclick="seeMoreSkill('skill','btn1')">See More</button>
+        <h1 id="certi-heading">Certificates</h1>
+        <ul id="certificate">
+        </ul>
+        <button class="btn" id="btn2" onclick="seeMoreCerti('certificate','btn2')">See More</button>
+    </div>
+    <div id="portfolio" onclick="resetMenu()">
+        <h1>My Projects</h1>
+        <ul id="project">
+        </ul>
+        <button class="btn" id="btn3" onclick="seeMorePro('project','btn3')">See More</button>
+    </div>
+    <div id="contact" onclick="resetMenu()">
+        <div class="contact-rows details" id="row-one">
+            <h1 class="details" id="contact-heading">Contact Me</h1>
+            <p class="details"><a href="mailto:kishorevanapalli2@gmail.com"><i class="fa-solid fa-paper-plane"></i>kishorevanapalli2@gmail.com</a></p>
+            <p class="details" onclick="copyText(9494525837)"><a><i class="fa-solid fa-phone-volume"></i>9494525837</a></p>
+            <div id="icons">
+                <a href="https://www.instagram.com/vanapallikishor?utm_source=qr&igsh=cXV5dTQ3MTZtbHYy" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/vanapalli.kishor.3" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://wa.me/qr/5UUFT3CIKK5IM1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/KishoreVanapalli" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kishorevanapalli5258?trk=contact-info" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+            <a href="imageFiles/resume.pdf" onclick="onText()" download id="CV">Download CV</a>
+        </div>
+        <div class="contact-rows" id="row-two">
+            <form name="submit-to-google-sheet" class="contact-data">
+                <input type="text" name="Name" id="name" placeholder="Enter your name" required>
+                <input type="email" name="Email" id="email" placeholder="Enter your mali id" required>
+                <textarea name="Message" rows="6" placeholder="Enter your message" required></textarea>
+                <button id="submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwA4hjQ2wgh739mr27scXoJMkJnx1SzmIiNY2AypcFsTNy0njpJXuXetWtbOSYw5DXOPg/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        document.getElementById("msg").innerHTML= "Message Sent Successfully!";
+        setTimeout(()=>{
+            document.getElementById("msg").innerHTML= "";
+        },5000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
