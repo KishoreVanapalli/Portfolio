@@ -4,6 +4,7 @@
     font-family: 'Segoe UI', sans-serif;
     box-sizing: border-box;
 }
+
 #msg{
     color: green;
     font-size: 20px;
@@ -819,7 +820,7 @@ input,button,textarea{
     }
     .details p{
         margin: 5% 10%;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     #row-one h1{
         margin: 0 auto;

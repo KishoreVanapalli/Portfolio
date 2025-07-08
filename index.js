@@ -20,6 +20,7 @@ let skillList = [
   "skillImages/skill_image_5.png",
   "skillImages/skill_image_6.png"
 ];
+
 let certiList = [
   "internships/certi1.png", "internships/certi2.png", "internships/certi3.png",
   "internships/certi4.jpg", "internships/certi5.jpg", "internships/certi6.jpg",
