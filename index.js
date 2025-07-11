@@ -21,7 +21,19 @@ let skillList = [
   "skillImages/skill_image_6.png"
 ];
 
-let certiList = [
+let certiList = ["internships/imagea.jpg",
+  "internships/imageb.jpg",
+  "internships/imagec.jpg",
+  "internships/imaged.jpg",
+  "internships/imagee.jpg",
+  "internships/imagef.jpg",
+  "internships/imageg.jpg",
+  "internships/imageh.jpg",
+  "internships/imagei.jpg",
+  "internships/imagej.jpg",
+  "internships/imagek.jpg",
+  "internships/imagel.jpg",
+  "internships/imagem.jpg",
   "internships/certi1.png", "internships/certi2.png", "internships/certi3.png",
   "internships/certi4.jpg", "internships/certi5.jpg", "internships/certi6.jpg",
   "internships/certi7.jpg", "internships/certi8.jpg", "internships/certi9.jpg",

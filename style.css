@@ -263,6 +263,7 @@ body{
     -webkit-backdrop-filter: blur(10px);
     position:fixed;
     display: none;
+    z-index: 10;
 }
 #show{
     position:fixed;
