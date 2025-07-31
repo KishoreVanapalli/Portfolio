@@ -47,25 +47,25 @@ let projList = [
   [
     "Portfolio Website",
     "A personal website showcasing my skills, projects, and contact info.",
-    "https://via.placeholder.com/300x200?text=Portfolio",
+    "https://github.com/KishoreVanapalli/Portfolio",
     "imageFiles/work-1.png"
   ],
   [
-    "Survey Form",
-    "A responsive form to collect user feedback and preferences.",
-    "https://via.placeholder.com/300x200?text=Survey+Form",
+    "TIC-TAO-TOE",
+    "A personal bulit TIC-TAO-TOE game.",
+    "https://github.com/KishoreVanapalli/Tic-Tac-Toe-Game",
     "imageFiles/work-2.png"
   ],
   [
-    "Technical Documentation",
-    "A multi-section documentation page explaining web topics clearly.",
-    "https://via.placeholder.com/300x200?text=Documentation",
+    "FreeCodeCamp",
+    "A few projects bulit during frecodecamp certification.",
+    "https://github.com/KishoreVanapalli/freecodecamp_projects",
     "imageFiles/work-3.png"
   ],
   [
-    "Product Landing Page",
-    "A marketing page for a fictional product with smooth layout and CTA.",
-    "https://via.placeholder.com/300x200?text=Product+Page",
+    "Expenses Tracker",
+    "A simple expenses tracker project using python.",
+    "https://github.com/KishoreVanapalli/expenses-tracker",
     "imageFiles/work-4.jpg"
   ]
 ];
@@ -202,6 +202,10 @@ projList.forEach((element, index) => {
     div0.classList.add("projects");
     proj.appendChild(div0);
     div0.appendChild(div1).appendChild(div2);
+
+    div2.onclick=()=>{
+        window.open(element[2], "_blank");
+    }
 });
 
 function seeMoreSkill(val,val1){
